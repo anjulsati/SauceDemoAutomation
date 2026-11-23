@@ -1,0 +1,9 @@
+target/
+.idea/
+*.iml
+.DS_Store
+*.log
+
+# Large report artifacts (kept locally, not in the repo)
+report/
+Anjul_Sati_Software_Testing_Project_Report.pdf

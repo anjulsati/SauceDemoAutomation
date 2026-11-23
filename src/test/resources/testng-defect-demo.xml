@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<!--
+  Defect-detection demonstration suite.
+
+  This suite intentionally fails: it asserts correct behaviour against
+  SauceDemo's deliberately faulty demo accounts. It is separate from the
+  main regression suite (testng.xml), which remains 64/64.
+
+  Run with:
+    mvn test -Dsurefire.suiteXmlFiles=src/test/resources/testng-defect-demo.xml
+-->
+<suite name="SauceDemo Defect Detection Demo" verbose="1">
+    <test name="Known Defects in Deliberately Faulty Accounts">
+        <classes>
+            <class name="com.saucedemo.tests.DefectDetectionTests"/>
+        </classes>
+    </test>
+</suite>
